@@ -1,0 +1,13 @@
+engines:
+  phan:
+    enabled: true
+    config:
+      file_extensions: "php"
+
+exclude_paths:
+  - tests/**/*
+  - plugins/**/*
+
+ratings:
+  paths:
+    - "**.php"

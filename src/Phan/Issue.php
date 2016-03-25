@@ -386,14 +386,14 @@ class Issue
                 self::TypeMismatchArgument,
                 self::CATEGORY_TYPE,
                 self::SEVERITY_NORMAL,
-                "Argument `%d` (`%s`) is `%s` but `%s()` takes %s",
+                "Argument %d (`%s`) is `%s` but `%s()` takes %s",
                 self::REMEDIATION_B
             ),
             new Issue(
                 self::TypeMismatchArgumentInternal,
                 self::CATEGORY_TYPE,
                 self::SEVERITY_NORMAL,
-                "Argument `%d` (`%s`) is `%s` but `%s()` takes `%s`",
+                "Argument %d (`%s`) is `%s` but `%s()` takes `%s`",
                 self::REMEDIATION_B
             ),
             new Issue(
@@ -491,7 +491,7 @@ class Issue
                 self::TypeNonVarPassByRef,
                 self::CATEGORY_TYPE,
                 self::SEVERITY_NORMAL,
-                "Only variables can be passed by reference at argument `%d` of `%s()`",
+                "Only variables can be passed by reference at argument %d of `%s()`",
                 self::REMEDIATION_B
             ),
             new Issue(
@@ -557,42 +557,42 @@ class Issue
                 self::ParamTooMany,
                 self::CATEGORY_PARAMETER,
                 self::SEVERITY_LOW,
-                "Call with `%d` arg(s) to %s() which only takes `%d` arg(s)",
+                "Call with %d arg(s) to %s() which only takes %d arg(s)",
                 self::REMEDIATION_B
             ),
             new Issue(
                 self::ParamTooManyInternal,
                 self::CATEGORY_PARAMETER,
                 self::SEVERITY_LOW,
-                "Call with `%d` arg(s) to `%s()` which only takes `%d` arg(s)",
+                "Call with %d arg(s) to `%s()` which only takes %d arg(s)",
                 self::REMEDIATION_B
             ),
             new Issue(
                 self::ParamTooFew,
                 self::CATEGORY_PARAMETER,
                 self::SEVERITY_NORMAL,
-                "Call with `%d` arg(s) to `%s()` which requires `%d` arg(s)",
+                "Call with %d arg(s) to `%s()` which requires %d arg(s)",
                 self::REMEDIATION_B
             ),
             new Issue(
                 self::ParamTooFewInternal,
                 self::CATEGORY_PARAMETER,
                 self::SEVERITY_NORMAL,
-                "Call with `%d` arg(s) to `%s()` which requires `%d` arg(s)",
+                "Call with %d arg(s) to `%s()` which requires %d arg(s)",
                 self::REMEDIATION_B
             ),
             new Issue(
                 self::ParamSpecial1,
                 self::CATEGORY_PARAMETER,
                 self::SEVERITY_NORMAL,
-                "Argument `%d` (`%s`) is `%s` but `%s()` takes `%s` when argument `%d` is `%s`",
+                "Argument %d (`%s`) is `%s` but `%s()` takes `%s` when argument %d is `%s`",
                 self::REMEDIATION_B
             ),
             new Issue(
                 self::ParamSpecial2,
                 self::CATEGORY_PARAMETER,
                 self::SEVERITY_NORMAL,
-                "Argument `%d` (`%s`) is `%s` but `%s()` takes `%s` when passed only one argument",
+                "Argument %d (`%s`) is `%s` but `%s()` takes `%s` when passed only one argument",
                 self::REMEDIATION_B
             ),
             new Issue(
@@ -613,7 +613,7 @@ class Issue
                 self::ParamTypeMismatch,
                 self::CATEGORY_PARAMETER,
                 self::SEVERITY_NORMAL,
-                "Argument `%d` is `%s` but `%s()` takes `%s`",
+                "Argument %d is `%s` but `%s()` takes `%s`",
                 self::REMEDIATION_B
             ),
             new Issue(

@@ -386,7 +386,7 @@ class Issue
                 self::TypeMismatchArgument,
                 self::CATEGORY_TYPE,
                 self::SEVERITY_NORMAL,
-                "Argument `%d` (`%s`) is `%s` but `%s()` takes %s defined at `%s:%d`",
+                "Argument `%d` (`%s`) is `%s` but `%s()` takes %s",
                 self::REMEDIATION_B
             ),
             new Issue(
@@ -516,7 +516,7 @@ class Issue
                 self::StaticCallToNonStatic,
                 self::CATEGORY_STATIC,
                 self::SEVERITY_NORMAL,
-                "Static call to non-static method `%s` defined at `%s:%d`",
+                "Static call to non-static method `%s`",
                 self::REMEDIATION_B
             ),
 
@@ -534,14 +534,14 @@ class Issue
                 self::DeprecatedFunction,
                 self::CATEGORY_DEPRECATED,
                 self::SEVERITY_NORMAL,
-                "Call to deprecated function `%s()` defined at `%s:%d`",
+                "Call to deprecated function `%s()`",
                 self::REMEDIATION_B
             ),
             new Issue(
                 self::DeprecatedClass,
                 self::CATEGORY_DEPRECATED,
                 self::SEVERITY_NORMAL,
-                "Call to deprecated class `%s` defined at `%s:%d`",
+                "Call to deprecated class `%s`",
                 self::REMEDIATION_B
             ),
 
@@ -557,7 +557,7 @@ class Issue
                 self::ParamTooMany,
                 self::CATEGORY_PARAMETER,
                 self::SEVERITY_LOW,
-                "Call with `%d` arg(s) to %s() which only takes `%d` arg(s) defined at `%s:%d`",
+                "Call with `%d` arg(s) to %s() which only takes `%d` arg(s)",
                 self::REMEDIATION_B
             ),
             new Issue(
@@ -571,7 +571,7 @@ class Issue
                 self::ParamTooFew,
                 self::CATEGORY_PARAMETER,
                 self::SEVERITY_NORMAL,
-                "Call with `%d` arg(s) to `%s()` which requires `%d` arg(s) defined at `%s:%d`",
+                "Call with `%d` arg(s) to `%s()` which requires `%d` arg(s)",
                 self::REMEDIATION_B
             ),
             new Issue(
